@@ -16,8 +16,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-cog-icon lucide-brain-cog text-blue-950"><path d="m10.852 14.772-.383.923"/><path d="m10.852 9.228-.383-.923"/><path d="m13.148 14.772.382.924"/><path d="m13.531 8.305-.383.923"/><path d="m14.772 10.852.923-.383"/><path d="m14.772 13.148.923.383"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446 3 3 0 0 0-.368 1.571 4 4 0 0 0-2.525 5.771"/><path d="M17.998 5.125a4 4 0 0 1 2.525 5.771"/><path d="M19.505 10.294a4 4 0 0 1-1.5 7.706"/><path d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516"/><path d="M4.5 10.291A4 4 0 0 0 6 18"/><path d="M6.002 5.125a3 3 0 0 0 .4 1.375"/><path d="m9.228 10.852-.923-.383"/><path d="m9.228 13.148-.923.383"/><circle cx="12" cy="12" r="3"/></svg>
             <h1 class='text-xl font-bold text-blue-950'>EduFound</h1>
         </div>
-       <nav class="max-sm:hidden flex flex-row justify-between gap-8 items-center align-center">
-            <ul class='flex flex-row gap-5'>
+       <nav class="toggle-bar max-md:top-full max-md:absolute max-md:left-0 max-md:flex-col max-md:bg-green-400 max-md:w-full flex flex-row justify-between gap-8 items-center align-center">
+            <ul class='max-md:flex-col flex flex-row gap-5'>
                <a href="#hero"><li>Home</li></a> 
                <a href="#features"><li>Features</li></a>
                 <a href="#about"><li>About</li></a>
@@ -27,14 +27,14 @@
                 <li><a class='text-xl border-green-100 p-2 m-2 rounded-2xl bg-green-300 hover:bg-green-100' href="register.html"><button>REGISTER</button></a></li>
             </ul> 
         </nav>
-        <div class="md:hidden">
+        <div class="hamburger-btn md:hidden cursor-pointer">
             <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
         </div> 
     </header>
 
     <main >
         <!-- The Hero section -->
-        <section id="hero" class=" px-10 bg-green-100 flex justify-around max-sm:flex-col">
+        <section id="hero" class=" px-10 bg-green-100 flex justify-around max-md:flex-col">
             <div class="flex flex-col align-center justify-center items-center max-sm:text-xl max-sm:flex-cols-1 md:items-start">
                 <p class='font-roboto text-2xl text-green-500 p-3'>Start your favorite course</p>
                 <h1 class='max-sm:w-xs md:w-1/1 font-roboto font-bold text-4xl p-3 w-1/2'>Now learning from anywhere, and build your <span class='text-green-400 italic'>bright career.</span></h1>
@@ -60,7 +60,7 @@
                 </form>
             </div>
 
-            <div class='bg-green-400 pb-4 flex flex-row justify-around items-center max-sm:hidden'>
+            <div class='bg-green-400 pb-4 flex flex-row justify-around items-center max-md:hidden'>
                 <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>UI/UX Design</button></a>
                 <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Data Science</button></a>
                 <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Development</button></a>
@@ -68,8 +68,8 @@
                 <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Financial</button></a>
             </div>
 
-            <div class='grid grid-cols-3 justify-around items-center gap-y-9 m-12 max-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
-                <div class='max-sm:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
+            <div class='grid grid-cols-3 justify-around items-center gap-y-9 m-12 max-md:grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
+                <div class='max-md:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
                 <img class='w-[300px] h-[280px] rounded-2xl' src="image/Ui_Ux.jpg" alt="" />
                  <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
                     <img class='w-10 rounded-2xl' src="image/UI Avatar.jpg" alt="" />
@@ -96,7 +96,7 @@
                 </div>
                 </div>
 
-                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <div class='max-md:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
                 <img class='w-[300px] h-[280px] rounded-2xl' src="image/Financials.jpg" alt="" />
                  <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
                     <img class='w-10 rounded-2xl' src="image/finance Avatar.jpg" alt="" />
@@ -123,7 +123,7 @@
                 </div>
                 </div>
 
-                <div class='max-sm:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <div class='max-md:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
                 <img class='w-[300px] rounded-2xl' src="image/Business.jpg" alt="" />
                  <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
                     <img class='w-10 rounded-2xl' src="image/Business Avatar.jpg" alt="" />
@@ -150,7 +150,7 @@
                 </div>
                 </div>
 
-                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <div class='max-md:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
                 <img class='w-[300px] h-[280px] rounded-2xl' src="image/Data Science.jpg" alt="" />
                  <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
                     <img class='w-10 rounded-2xl' src="image/Data Avatar.jpg" alt="" />
@@ -177,7 +177,7 @@
                 </div>
                 </div>
 
-                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <div class='max-md:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
                 <img class='w-[300px] h-[300px] rounded-2xl' src="image/Developer.jpg" alt="" />
                  <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
                     <img class='w-10 rounded-2xl' src="image/Dev Avatar.jpg" alt="" />
@@ -217,21 +217,21 @@
     
     <!-- The footer section -->
     <footer>
-        <ul class='max-sm:gap-2 flex flex-row justify-between align-center items-center bg-green-400 p-7'>
-            <a class="max-sm:hidden" href="#about"><li>About</li></a>
-            <a class="max-sm:hidden" href=""><li>Privacy Policy</li></a>
-            <a class="max-sm:hidden" href=""><li>Contact</li></a>
-            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Facebook logo.jpg" alt="" />Facebook</li></a>
-            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Linkedin logo.jpg" alt="" />LinkedIn</li></a>
-            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/X logo.jpg" alt="" />X</li></a>
-            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Instagram logo.jpg" alt="" />Instagram</li></a>
-            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Whatsapp logo.jpg " alt="" />WhatsApp</li></a>
+        <ul class='max-md:gap-2 flex flex-row justify-between align-center items-center bg-green-400 p-7'>
+            <a class="max-md:hidden" href="#about"><li>About</li></a>
+            <a class="max-md:hidden" href=""><li>Privacy Policy</li></a>
+            <a class="max-md:hidden" href=""><li>Contact</li></a>
+            <a href=""><li><img class='w-[50px] max-md:hidden' src="image/Facebook logo.jpg" alt="" />Facebook</li></a>
+            <a href=""><li><img class='w-[50px] max-md:hidden' src="image/Linkedin logo.jpg" alt="" />LinkedIn</li></a>
+            <a href=""><li><img class='w-[50px] max-md:hidden' src="image/X logo.jpg" alt="" />X</li></a>
+            <a href=""><li><img class='w-[50px] max-md:hidden' src="image/Instagram logo.jpg" alt="" />Instagram</li></a>
+            <a href=""><li><img class='w-[50px] max-md:hidden' src="image/Whatsapp logo.jpg " alt="" />WhatsApp</li></a>
         
         
         </ul>
     </footer>
         
 
-<script defer src="/JS/index.js"></script>
+<script src="/JS/index.js"></script>
 </body>
 </html>

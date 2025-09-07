@@ -27,11 +27,14 @@ loginBtn.addEventListener("click", function(e){
              })
 
              if(!response.ok){
-                throw Error("wrong email and password")
+                throw Error("wrong email and password");
+                
              }
-            // window.location.href="/dashboard.html";
+             
              const data = await response.json();
              console.log(data);
+                localStorage.getItem("token", data.token);
+             window.location.href="/dashboard.html";
         }catch(error){
             console.error('invalid email or password')
         }

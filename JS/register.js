@@ -37,9 +37,12 @@ registerBtn.addEventListener('click', function(event){
         if(!response.ok){
             throw Error('Enter valid details')
         };
-     window.location.href="/login.html";
+    
         const data = await response.json();
     console.log(data);
+        localStorage.setItem("token", data.token)
+
+     window.location.href="/login.html";
     } catch(error){
         console.error('Invalid information')
     };
