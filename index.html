@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>EduFound</title>
+</head>
+<body>
+    <header class='flex flex-row justify-around align-center items-center p-4 gap-5 sticky top-0 z-[20] mx-auto w-full bg-green-400 '>
+        <div class='flex flex-row justify-center align-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-cog-icon lucide-brain-cog text-blue-950"><path d="m10.852 14.772-.383.923"/><path d="m10.852 9.228-.383-.923"/><path d="m13.148 14.772.382.924"/><path d="m13.531 8.305-.383.923"/><path d="m14.772 10.852.923-.383"/><path d="m14.772 13.148.923.383"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446 3 3 0 0 0-.368 1.571 4 4 0 0 0-2.525 5.771"/><path d="M17.998 5.125a4 4 0 0 1 2.525 5.771"/><path d="M19.505 10.294a4 4 0 0 1-1.5 7.706"/><path d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516"/><path d="M4.5 10.291A4 4 0 0 0 6 18"/><path d="M6.002 5.125a3 3 0 0 0 .4 1.375"/><path d="m9.228 10.852-.923-.383"/><path d="m9.228 13.148-.923.383"/><circle cx="12" cy="12" r="3"/></svg>
+            <h1 class='text-xl font-bold text-blue-950'>EduFound</h1>
+        </div>
+       <nav class="max-sm:hidden flex flex-row justify-between gap-8 items-center align-center">
+            <ul class='flex flex-row gap-5'>
+               <a href="#hero"><li>Home</li></a> 
+               <a href="#features"><li>Features</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+            <ul class='flex flex-row gap-3' >
+                <li><a class='text-xl border-green-100 p-2 m-2 rounded-2xl bg-green-300 hover:bg-green-100' href="register.html"><button>REGISTER</button></a></li>
+            </ul> 
+        </nav>
+        <div class="md:hidden">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        </div> 
+    </header>
+
+    <main >
+        <!-- The Hero section -->
+        <section id="hero" class=" px-10 bg-green-100 flex justify-around max-sm:flex-col">
+            <div class="flex flex-col align-center justify-center items-center max-sm:text-xl max-sm:flex-cols-1 md:items-start">
+                <p class='font-roboto text-2xl text-green-500 p-3'>Start your favorite course</p>
+                <h1 class='max-sm:w-xs md:w-1/1 font-roboto font-bold text-4xl p-3 w-1/2'>Now learning from anywhere, and build your <span class='text-green-400 italic'>bright career.</span></h1>
+                <p class='max-sm:w-xs md:w-1/1 text-xl p-3 w-1/2'>It has survived not only five centuries but also the leap into electronic typesetting.</p>
+                <a class='border-2 p-2 m-2 rounded-2xl bg-green-700 text-white font-bold hover:bg-green-500' href="register.html"><button>Start a Course</button></a>
+            </div>
+           
+            <div class="max-sm:flex max-sm:flex-col-reverse">
+                 <div class='items-center content-center'>
+                    <h2  class='border-2 rounded-[50px] p-2 m-2 bg-green-700 text-center text-white '> More than 525 Courses</h2>
+                </div>  
+                <img class="" src="./image/hero3.png" alt="" />
+                             
+            </div>
+        </section >
+        <!-- The features Section -->
+        <section id="features" class="bg-green-100">
+            <div class='bg-green-400 flex flex-row justify-between items-center p-3 mt-4'>
+                <h2 class='max-sm:text-2xl max-sm:ml-8 font-roboto text-2xl'>All <span class='text-white italic'>Courses</span> of EduFound</h2>
+                <form class='max-sm:hidden border-1 flex flex-row p-2 m-1 rounded-2xl' action="" method="get">
+                    <input type="search" id='Search' placeholder='Search your course' />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                </form>
+            </div>
+
+            <div class='bg-green-400 pb-4 flex flex-row justify-around items-center max-sm:hidden'>
+                <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>UI/UX Design</button></a>
+                <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Data Science</button></a>
+                <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Development</button></a>
+                <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Business</button></a>
+                <a class='border-amber-50 rounded-[8px] p-2 bg-white hover:bg-green-300 text-xl' href=""> <button>Financial</button></a>
+            </div>
+
+            <div class='grid grid-cols-3 justify-around items-center gap-y-9 m-12 max-sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
+                <div class='max-sm:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <img class='w-[300px] h-[280px] rounded-2xl' src="image/Ui_Ux.jpg" alt="" />
+                 <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
+                    <img class='w-10 rounded-2xl' src="image/UI Avatar.jpg" alt="" />
+                    <p>Peter Foster</p>
+                    <a href="" > <button class='border-amber-50 rounded-[8px] p-2 bg-green-300'>UI/UX Design</button></a>
+                </div>
+                <h3 class='m-2'>Create Amazing Color Schemes for Your UX Design Projects</h3>
+                <div class='flex flex-row gap-4 items-center justify-start'>
+                   <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock9-icon lucide-clock-9"><path d="M12 6v6H8"/><circle cx="12" cy="12" r="10"/></svg>
+                        <p> 08 hr 30 mins</p>
+                    </div>
+                    <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/></svg>
+                        <p>2000+ Students</p>
+                    </div>
+                </div>
+                <div class='m-2 p-2 flex flex-row gap-3 bg-green-200 items-center justify-between'>
+                    <p class='text-green-600'>$420.00</p>
+                    <div class='flex flex-row gap-2'>
+                        <p>5.0</p>
+                        <img class='w-20' src="image/illustration-five-stars.webp" alt="" />
+                    </div>
+                </div>
+                </div>
+
+                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <img class='w-[300px] h-[280px] rounded-2xl' src="image/Financials.jpg" alt="" />
+                 <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
+                    <img class='w-10 rounded-2xl' src="image/finance Avatar.jpg" alt="" />
+                    <p>Prof. Robert Zuma</p>
+                    <a href="" > <button class='border-amber-50 rounded-[8px] p-2 bg-green-300'>Financial</button></a>
+                </div>
+                <h3 class='m-2'>Finance Series: Learn to Budget and Calculate your Net Worth</h3>
+                <div class='flex flex-row gap-4 items-center justify-start'>
+                   <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock9-icon lucide-clock-9"><path d="M12 6v6H8"/><circle cx="12" cy="12" r="10"/></svg>
+                        <p> 12 hr 00 mins</p>
+                    </div>
+                    <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/></svg>
+                        <p>1500+ Students</p>
+                    </div>
+                </div>
+                <div class='m-2 p-2 flex flex-row gap-3 bg-green-200 items-center justify-between'>
+                    <p class='text-green-600'>Free</p>
+                    <div class='flex flex-row gap-2'>
+                        <p>5.0</p>
+                        <img class='w-20' src="image/illustration-five-stars.webp" alt="" />
+                    </div>
+                </div>
+                </div>
+
+                <div class='max-sm:w-full border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <img class='w-[300px] rounded-2xl' src="image/Business.jpg" alt="" />
+                 <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
+                    <img class='w-10 rounded-2xl' src="image/Business Avatar.jpg" alt="" />
+                    <p>Jeremy Igwemmadu</p>
+                    <a href="" > <button class='border-amber-50 rounded-[8px] p-2 bg-green-300'>Business</button></a>
+                </div>
+                <h3 class='m-2'>Build Brand into Marketing: Tackling the New Marketing Landscape</h3>
+                <div class='flex flex-row gap-4 items-center justify-start'>
+                   <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock9-icon lucide-clock-9"><path d="M12 6v6H8"/><circle cx="12" cy="12" r="10"/></svg>
+                        <p> 04 hr 30 mins</p>
+                    </div>
+                    <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/></svg>
+                        <p>20 Students</p>
+                    </div>
+                </div>
+                <div class='m-2 p-2 flex flex-row gap-3 bg-green-200 items-center justify-between'>
+                    <p class='text-green-600'>$29.99</p>
+                    <div class='flex flex-row gap-2'>
+                        <p>5.0</p>
+                        <img class='w-20' src="image/illustration-five-stars.webp" alt="" />
+                    </div>
+                </div>
+                </div>
+
+                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <img class='w-[300px] h-[280px] rounded-2xl' src="image/Data Science.jpg" alt="" />
+                 <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
+                    <img class='w-10 rounded-2xl' src="image/Data Avatar.jpg" alt="" />
+                    <p>Michelle Angelo</p>
+                    <a href="" > <button class='border-amber-50 rounded-[8px] p-2 bg-green-300'>Data Science</button></a>
+                </div>
+                <h3 class='m-2'>Data Science and Machine Learning with Python + Hands On!</h3>
+                <div class='flex flex-row gap-4 items-center justify-start'>
+                   <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock9-icon lucide-clock-9"><path d="M12 6v6H8"/><circle cx="12" cy="12" r="10"/></svg>
+                        <p> 06 hr 15 mins</p>
+                    </div>
+                    <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/></svg>
+                        <p>240+ Students</p>
+                    </div>
+                </div>
+                <div class='m-2 p-2 flex flex-row gap-3 bg-green-200 items-center justify-between'>
+                    <p class='text-green-600'>$385.00</p>
+                    <div class='flex flex-row gap-2'>
+                        <p>5.0</p>
+                        <img class='w-20' src="image/illustration-five-stars.webp" alt="" />
+                    </div>
+                </div>
+                </div>
+
+                <div class='max-sm:w-full  border-2 p-2 m-2 max-w-xs rounded-2xl'>
+                <img class='w-[300px] h-[300px] rounded-2xl' src="image/Developer.jpg" alt="" />
+                 <div class='flex flex-row justify-start items-center gap-4 m-2 p-2'>
+                    <img class='w-10 rounded-2xl' src="image/Dev Avatar.jpg" alt="" />
+                    <p>Peter Foster</p>
+                    <a href="" > <button class='border-amber-50 rounded-[8px] p-2 bg-green-300'>Development</button></a>
+                </div>
+                <h3 class='m-2'>Website Development: Master the art of building Responsive Web Applications </h3>
+                <div class='flex flex-row gap-4 items-center justify-start'>
+                   <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock9-icon lucide-clock-9"><path d="M12 6v6H8"/><circle cx="12" cy="12" r="10"/></svg>
+                        <p> 20 hr 00 mins</p>
+                    </div>
+                    <div class='card-para flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/></svg>
+                        <p>200+ Students</p>
+                    </div>
+                </div>
+                <div class='m-2 p-2 flex flex-row gap-3 bg-green-200 items-center justify-between'>
+                    <p class='text-green-600'>$700.00</p>
+                    <div class='flex flex-row gap-2'>
+                        <p>5.0</p>
+                        <img class='w-20' src="image/illustration-five-stars.webp" alt="" />
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- This is the About section -->
+        <section id="about">
+            <h2 >About Us</h2>
+            <p class='bg-green-700 p-2 text-white'>
+            EduFound is a modern e-learning platform designed to make online education engaging, accessible, and career-focused. The website features a clean, professional interface where learners can explore a wide range of courses in fields like design, data science, business, and finance. With intuitive navigation, course categorization, and visually appealing layouts, EduFound combines simplicity with functionality—helping students quickly find, evaluate, and enroll in courses. Its user-friendly design and motivational branding position it as a trusted platform for building skills and advancing careers.
+        </p>
+        </section>
+    </main>
+    
+    <!-- The footer section -->
+    <footer>
+        <ul class='max-sm:gap-2 flex flex-row justify-between align-center items-center bg-green-400 p-7'>
+            <a class="max-sm:hidden" href="#about"><li>About</li></a>
+            <a class="max-sm:hidden" href=""><li>Privacy Policy</li></a>
+            <a class="max-sm:hidden" href=""><li>Contact</li></a>
+            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Facebook logo.jpg" alt="" />Facebook</li></a>
+            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Linkedin logo.jpg" alt="" />LinkedIn</li></a>
+            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/X logo.jpg" alt="" />X</li></a>
+            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Instagram logo.jpg" alt="" />Instagram</li></a>
+            <a href=""><li><img class='w-[50px] max-sm:hidden' src="image/Whatsapp logo.jpg " alt="" />WhatsApp</li></a>
+        
+        
+        </ul>
+    </footer>
+        
+
+<script defer src="/JS/index.js"></script>
+</body>
+</html>
