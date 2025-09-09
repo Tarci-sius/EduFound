@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,31 +29,40 @@
                  <p>Already a student? <span class='text-blue-500'><a href="login.html">Log in here</a></span></p>
              </div>
              <div>
-                    <form class='flex flex-col justify-around gap-y-4 m-3' action="">
-                        <label htmlFor="fName">Full Name</label>
-                        <div class='flex flex-row  justify-between border-2 p-2 rounded-2xl'>
-                            <input type="text" id='fName' placeholder='Philip Charity' />
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark-icon lucide-circle-question-mark"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    <form id="form" class='flex flex-col justify-around gap-y-4 m-3' action="">
+                       
+                        <div class='flex flex-col gap-1'>
+                            <label for="fName">Full Name</label>
+                            <input type="text" id='fName' placeholder='Philip Charity' class="border-2 p-1 rounded-xl w-full focus:outline-0" />                          
+                            <div class="error text-red-400 text-xl h-[13px]"></div>
                         </div>
-                        <label htmlFor="email">Email</label>
-                        <div class='flex flex-row  justify-between border-2 p-2 rounded-2xl'>
-                            <input type="mail" id='email' placeholder='e.g philipcharity@gmail.com' />
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark-icon lucide-circle-question-mark"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                       
+                        
+                        <div class='flex flex-col gap-1'>
+                             <label for="email">Email</label>
+                            <input type="text" id='email' name="email" placeholder='e.g philipcharity@gmail.com' class="border-2 p-1 rounded-xl w-full" />                          
+                            <div class="error text-red-400 text-xl h-[13px]"></div>
                         </div>
-                        <label htmlFor="pNumber">Phone number</label>
-                       <div class='flex flex-row  justify-between border-2 p-2 rounded-2xl'>
-                            <input type="tel" id='pNumber' placeholder='+2348 0000 1111' />
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark-icon lucide-circle-question-mark"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                       
+                       <div class='flex flex-col gap-1'>
+                            <label for="pNumber">Phone number</label>   
+                            <input type="tel" id='pNumber' placeholder='+2348 0000 1111' class="border-2 p-1 rounded-xl w-full" />                            
+                            <div class="error text-red-400 text-xl h-[13px]"></div>
                         </div>
-                        <label htmlFor="password">Password</label>
-                        <div class='flex flex-row  justify-between border-2 p-2 rounded-2xl'>
-                             <input  type="password" id='password' placeholder='********' />
-                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye cursor-pointer"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+                       
+                        <div class='flex flex-col gap-1'>
+                            <label for="password">Password</label>
+                            <input  type="password" id='password' placeholder='********' class="border-2 p-1 rounded-xl w-full" />
+                            <div class="error text-red-400 text-xl h-[13px]"></div>
                         </div>
+
+                         <div class='flex flex-col gap-1'>
+                            <label for="password2">Confirm Password</label>
+                            <input  type="password" id='password2' placeholder='********' class="border-2 p-1 rounded-xl w-full" />
+                            <div class="error text-red-400 text-xl h-[13px]"></div>
+                        </div>
+                        <button id="regBtn" type="submit" class='bg-green-700 p-3 rounded-2xl items-center text-3xl text-white cursor-pointer'>Create account</button>
                  </form>
-             </div>
-             <div class='flex bg-green-700 p-3 rounded-2xl justify-center items-center text-3xl text-white'>
-                    <a id="regBtn" href=""><button onclick=""  >Create account</button></a>
              </div>
              <div>
                  <p>Not sure which course suits you? Take our quick survey for a personalized recommendation. <span class='text-blue-500'><a href="">Take Survey Now</a></span></p>

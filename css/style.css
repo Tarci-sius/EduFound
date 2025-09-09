@@ -3,6 +3,10 @@
     
 }
 
-.nav-open{
-    transform: translate(100%);
+.success input{
+    color: #eafa0c;
+}
+
+.error input{
+    color: #ff0000;
 }
