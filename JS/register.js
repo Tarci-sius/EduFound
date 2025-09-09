@@ -116,9 +116,9 @@ registerBtn.addEventListener('click', function(event){
         const data = await response.json();
             console.log(data);
         
-            // localStorage.setItem("token", data.token)
+         localStorage.setItem("token", data.token)
 
-    //  window.location.href="/login.html";
+        window.location.href="/login.html";
     } catch(error){
         console.error('Invalid information')
     };

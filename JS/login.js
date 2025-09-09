@@ -95,8 +95,8 @@ loginBtn.addEventListener("click", function(e){
              
              const data = await response.json();
              console.log(data);
-            //     localStorage.getItem("token", data.token);
-            //  window.location.href="/dashboard.html";
+             localStorage.getItem("token", data.token);
+             window.location.href="/dashboard.html";
         }catch(error){
             console.error('invalid email or password')
         }
